@@ -91,6 +91,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo);
   text-decoration: none;
+}
+.logo-margin {
   margin-right: 93px;
 }
 
@@ -140,8 +142,33 @@ body {
   list-style: none;
   display: flex;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
+.icon-list {
+  display: flex;
+  align-items: center;
+}
+.icon-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #757575;
+}
+.envelope-class {
+  width: 16px;
+  height: 12px;
+}
+.smartphone-class {
+  width: 10px;
+  height: 16px;
+}
+
+.icon-icon:hover,
+.icon-icon:focus {
+  fill: #2196f3;
+}
 .mail-link {
   margin-right: 48px;
 }
@@ -150,6 +177,7 @@ body {
 .tel-link {
   color: var(--hero-one);
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .mail-link:hover,
@@ -164,7 +192,7 @@ body {
 /* main */
 /* hero */
 .hero-one {
-  background-color: var(--hero-one-background-color);
+  background-image: url()
   text-align: center;
   padding-top: 206px;
   padding-bottom: 200px;
@@ -209,17 +237,20 @@ body {
 .benefits-item {
 }
 .benefits-item-icon {
-  display: block;
-  width: 70px;
-  height: 70px;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  padding-left: 100px;
-  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  cursor: unset;
   background-color: #f5f4fa;
   fill: #212121;
+  margin-bottom: 30px;
 }
-
+.benefits-icon-class {
+  width: 70px;
+  height: 70px;
+}
 .benefits-item:not(:last-child) {
   margin-right: 67px;
 }
@@ -285,6 +316,9 @@ body {
 .comande-img-item {
   margin-left: 30px;
   margin-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .background-color-comande {
@@ -341,7 +375,32 @@ body {
   width: 20px;
   height: 20px;
 }
+/* Постоянные клиенты */
+.customers-icon-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.customers-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+}
 
+.customers-icons:hover,
+.customers-icons:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.customers-icon-class {
+}
+
+/* end Постоянные клиенты */
 /* end main */
 
 /* footer */
@@ -351,10 +410,19 @@ body {
 .white-Studio {
   color: var(--white-Studio);
 }
-.margin-footer {
-  margin-bottom: 20px;
+
+.footer-container {
+  display: flex;
+  align-items: center;
 }
 
+.margin-footer {
+  margin-bottom: 20px;
+  margin-right: 156px;
+}
+
+.logo-margin-footer {
+}
 .contacts {
   list-style: none;
   font-family: Roboto, sans-serif;
@@ -387,7 +455,46 @@ body {
 .tel-contacts:active {
   color: var(--contacts-list-hfa);
 }
+.join {
+}
+.footer-h-three {
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
 
+.footer-icon-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-icon-list :not(:last-child) {
+  margin-right: 10px;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer-icons:hover,
+.footer-icons:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.footer-icon-class {
+  width: 20px;
+  height: 20px;
+}
 /* end page-1*/
 
 /* page-2 */
@@ -404,9 +511,18 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.menu-portfolio-item :hover,
+.menu-portfolio-item :focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .menu-portfolio-item:not(:last-child) {
   margin-right: 8px;
+}
+.portfolio-item :hover,
+.portfolio-item :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-portfolio {
