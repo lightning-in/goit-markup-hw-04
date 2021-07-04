@@ -206,6 +206,20 @@ body {
   display: flex;
 }
 
+.benefits-item {
+}
+.benefits-item-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #f5f4fa;
+  fill: #212121;
+}
+
 .benefits-item:not(:last-child) {
   margin-right: 67px;
 }
@@ -277,6 +291,8 @@ body {
   background-color: var(--background-color-comande);
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 .name-title {
@@ -296,7 +312,12 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--work-title);
+  margin-bottom: 16px;
 }
+
+.comande-icons {
+}
+
 /* end main */
 
 /* footer */
