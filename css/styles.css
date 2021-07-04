@@ -315,7 +315,31 @@ body {
   margin-bottom: 16px;
 }
 
+.comande-icon-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
 .comande-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #afb1b8;
+}
+
+.comande-icons:hover,
+.comande-icons:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.comande-icon-class {
+  width: 20px;
+  height: 20px;
 }
 
 /* end main */
